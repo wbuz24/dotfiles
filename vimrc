@@ -36,6 +36,7 @@ hi statusline guibg=DarkGrey ctermfg=8 guifg=White ctermbg=15
 
 
 set statusline=
+set statusline+=\ %f
 set statusline+=%{StatuslineGit()}
 set statusline+=%=
 set statusline+=%m
