@@ -1,6 +1,6 @@
 # Dotfiles repository
 
-For more information on a dotfile repository and why you may be interested in one, I this [webpage](https://geekdude.github.io/tech/dotfiles/) by Dr. Aaron Young.
+For more information on a dotfile repository and why you may be interested in one, I recommnd this [webpage](https://geekdude.github.io/tech/dotfiles/) by Dr. Aaron Young.
 
 # Structure
 
