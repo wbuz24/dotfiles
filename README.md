@@ -18,6 +18,6 @@ Dependencies:
 
 # Saving Scheme
 
-The bash script will ensure that you have the ~/.old_dotfiles folder and save the existing .bashrc and .vimrc. If the ~/.old_dotfiles folder already existed and has pre-existing bashrc and vimrc files inside of it, it will move the pre-existing files and append the date to the filename.
+The bash script will ensure that you have the ~/.old_dotfiles folder and save the existing config files. If the ~/.old_dotfiles folder already exists and has pre-existing files inside of it, it will move the pre-existing files and append the date to the filename.
 
 The script will then create hard links between the repository versions of the config files with the system config files, then when the repository receives updates, it will automatically update your system.
