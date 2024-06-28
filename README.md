@@ -10,3 +10,8 @@ For setup, this bash script will build an old_dotfiles folder and move things ap
 ```
 sh setup.sh
 ```
+
+Dependencies:
+
+- bash
+- vim
