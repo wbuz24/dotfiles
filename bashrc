@@ -75,26 +75,28 @@ _open_files_for_editing() {
 
 ## Aliases for the functions above.
 ## Uncomment an alias if you want to use it.
-##
+
+# alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
+# alias pacdiff=eos-pacdiff
+################################################################################
+# System aliases
+alias vi=vim
+alias h="history -20"
+alias bat="bat -pp"
+alias cal="cal -y"
 
 alias ls='ls --color=auto'
 alias la="ls -la"
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 
-
-# alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
-# alias pacdiff=eos-pacdiff
-################################################################################
-# alias vi=nvim
-alias vi=vim
+# UTK aliases
 alias hydra="ssh wbuziak@hydra0.eecs.utk.edu"
 alias acf="ssh wbuziak@acf-login.acf.tennessee.edu"
 alias isaac="ssh wbuziak@login.isaac.utk.edu"
 alias cluster="ssh wbuziak@neuro-firewall.eecs.utk.edu"
-alias h="history -20"
-alias bat="bat -pp"
-alias cal="cal -y"
+
+# Laptop aliases
 alias matlab='~/./Applications/R2024a/bin/matlab'
 
 # Add to path
