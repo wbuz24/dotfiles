@@ -11,9 +11,10 @@ fi
 echo ""
 
 # Search for the old dotfiles and move them to a folder
+current_date=$(date +"%Y-%m-%d")
 
 if [ -f ~/.old_dotfiles/bashrc ]; then
-  current_date=$(date +"%Y-%m-%d")
+  # If upload twice in one day, copies are deleted
   file=~/.old_dotfiles/bashrc-$current_date
   if [ -f $file ]; then
     rm $file
@@ -23,8 +24,17 @@ if [ -f ~/.old_dotfiles/bashrc ]; then
   echo 'Copied and dated the existing bashrc file'
 fi
 
+if [ -f ~/.old_dotfiles/zshrc ]; then
+  file=~/.old_dotfiles/zshrc-$current_date
+  if [ -f $file ]; then
+    rm $file
+  fi
+  
+  mv ~/.old_dotfiles/zshrc $file
+  echo 'Copied and dated the existing zshrc file'
+fi
+
 if [ -f ~/.old_dotfiles/vimrc ]; then
-  current_date=$(date +"%Y-%m-%d")
   file=~/.old_dotfiles/vimrc-$current_date
   if [ -f $file ]; then
     rm $file
@@ -33,10 +43,16 @@ if [ -f ~/.old_dotfiles/vimrc ]; then
   echo 'Copied and dated the existing vimrc file'
 fi
 
+# Move old dotfiles to folder
 
 if [ -f ~/.bashrc ]; then 
 	mv ~/.bashrc ~/.old_dotfiles/bashrc
 	echo "Moved .bashrc to ~/.old_dotfiles/bashrc"
+fi
+
+if [ -f ~/.zshrc ]; then 
+	mv ~/.zshrc ~/.old_dotfiles/zshrc
+	echo "Moved .zshrc to ~/.old_dotfiles/zshrc"
 fi
 
 if [ -f ~/.vimrc ]; then
@@ -45,9 +61,12 @@ if [ -f ~/.vimrc ]; then
 fi
 echo ""
 
-
+# Set up hard links
 if [ -f bashrc ]; then
 	ln ./bashrc ~/.bashrc
+fi
+if [ -f zshrc ]; then
+	ln ./zshrc ~/.zshrc
 fi
 if [ -f vimrc ]; then
 	ln ./vimrc ~/.vimrc
@@ -56,4 +75,16 @@ fi
 echo "Links created"
 echo ""
 
-source ~/.bashrc
+# Check if bashrc exists, if not, check zsh
+if [ -f bashrc ]; then
+  source ~/.bashrc
+  echo "source ~/.bashrc"
+  echo ""
+else 
+  if [ -f zshrc ]; then
+    source ~/.zshrc
+    echo "source ~/.zshrc"
+    echo ""
+  fi
+fi
+
