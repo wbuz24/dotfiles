@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # This is a bash setup script for Will Buziak's dotfiles repository 
 
 # Check the existence of an ".old_dotfiles" directory
@@ -56,4 +58,4 @@ fi
 echo "Links created"
 echo ""
 
-source ~/.bashrc
+'source ~/.bashrc'

@@ -101,6 +101,8 @@ alias matlab='~/./Applications/R2024a/bin/matlab'
 
 # Colorado School of Mines
 alias milk='ssh milk@138.67.63.254'
+alias serv1='ssh wbuziak@138.67.7.74'
+alias serv3='ssh wbuziak@138.67.7.61'
 
 # Add to path
 
