@@ -47,12 +47,11 @@ if [ -f ~/.vimrc ]; then
 fi
 echo ""
 
-
 if [ -f bashrc ]; then
-	ln ./bashrc ~/.bashrc
+	ln bashrc ~/.bashrc
 fi
 if [ -f vimrc ]; then
-	ln ./vimrc ~/.vimrc
+	ln vimrc ~/.vimrc
 fi
 
 echo "Links created"
