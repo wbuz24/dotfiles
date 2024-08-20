@@ -57,4 +57,4 @@ fi
 echo "Links created"
 echo ""
 
-'source ~/.bashrc'
+'source ~/.bashrc' 1> /dev/null

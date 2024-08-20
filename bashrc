@@ -103,6 +103,7 @@ alias matlab='~/./Applications/R2024a/bin/matlab'
 alias milk='ssh milk@138.67.63.254'
 alias serv1='ssh wbuziak@138.67.7.74'
 alias serv3='ssh wbuziak@138.67.7.61'
+alias jump='ssh will_buziak@pvm-jumpbox.mines.edu'
 
 # Add to path
 
