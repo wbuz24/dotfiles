@@ -100,7 +100,7 @@ alias cluster="ssh wbuziak@neuro-firewall.eecs.utk.edu"
 alias matlab='~/./Applications/R2024a/bin/matlab'
 
 # Colorado School of Mines
-alias milk='ssh milk@138.67.63.254'
+alias milk='ssh wbuziak@138.67.11.77'
 alias serv1='ssh wbuziak@138.67.7.74'
 alias serv3='ssh wbuziak@138.67.7.61'
 alias jump='ssh will_buziak@pvm-jumpbox.mines.edu'
