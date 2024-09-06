@@ -97,7 +97,6 @@ alias isaac="ssh wbuziak@login.isaac.utk.edu"
 alias cluster="ssh wbuziak@neuro-firewall.eecs.utk.edu"
 
 # Laptop aliases
-alias matlab='~/./Applications/R2024a/bin/matlab'
 
 # Colorado School of Mines
 alias milk='ssh wbuziak@138.67.11.77'
