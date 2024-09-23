@@ -30,26 +30,25 @@ set showmatch
 
 set laststatus=2
 
-" Build status line "
+" This, coupled with the function below, fixes stray characters from scrolling
+let b:branchname = ' '
+
 " default the statusline to green when entering Vim
 hi statusline guibg=DarkGrey ctermfg=8 guifg=White ctermbg=15
 
-
+" Build status line "
 set statusline=
 set statusline+=\ %f
-set statusline+=%{StatuslineGit()}
+set statusline+=[%{b:branchname}]
 set statusline+=%=
 set statusline+=%m
 set statusline+=\ %L
 set statusline+=\ %y
 
 " Display the git branch, or an empty string if none "
-function! GitBranch()
-  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-endfunction
 
 function! StatuslineGit()
-  let l:branchname = GitBranch()
-  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+  let l:string = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+  let b:branchname = strlen(l:string) > 0?'  '.l:string.' ':''
 endfunction
 
