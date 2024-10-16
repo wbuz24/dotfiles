@@ -101,7 +101,9 @@ alias cluster="ssh wbuziak@neuro-firewall.eecs.utk.edu"
 # Colorado School of Mines
 alias milk='ssh wbuziak@138.67.11.77'
 alias serv1='ssh wbuziak@138.67.14.63'
+alias serv2='ssh wbuziak@138.67.20.62'
 alias serv3='ssh wbuziak@138.67.7.61'
+alias serv4='ssh wbuziak@'
 alias jump='ssh will_buziak@pvm-jumpbox.mines.edu'
 
 # Add to path
