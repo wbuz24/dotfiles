@@ -2,6 +2,10 @@
 
 # This is a bash setup script for Will Buziak's dotfiles repository 
 
+echo "Relevant Applications:"
+echo "- imagemagick"
+echo "- jgraph"
+
 # Check the existence of an ".old_dotfiles" directory
 if [ -d ~/.old_dotfiles ]; then
 	echo 'Directory: ~/.old_dotfiles/ exists'
@@ -57,4 +61,7 @@ fi
 echo "Links created"
 echo ""
 
-'source ~/.bashrc' 1> /dev/null
+echo "You may need to source the ~/.bashrc"
+echo ""
+
+# Applications
