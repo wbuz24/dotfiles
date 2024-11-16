@@ -84,6 +84,7 @@ alias vi=vim
 alias h="history -20"
 alias bat="bat -pp"
 alias cal="cal -y"
+alias matlab="~/../../usr/local/MATLAB/R2024b/bin/matlab"
 
 alias ls='ls --color=auto'
 alias la="ls -la"
@@ -99,7 +100,7 @@ alias cluster="ssh wbuziak@neuro-firewall.eecs.utk.edu"
 # Laptop aliases
 
 # Colorado School of Mines
-alias milk='ssh wbuziak@138.67.11.77'
+alias milk='ssh wbuziak@138.67.20.8'
 alias serv1='ssh wbuziak@138.67.14.63'
 alias serv2='ssh wbuziak@138.67.20.62'
 alias serv3='ssh wbuziak@138.67.7.61'
@@ -110,4 +111,5 @@ alias jump='ssh will_buziak@pvm-jumpbox.mines.edu'
 
 PATH=$PATH:/home/shartreuce/.cargo/bin
 
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
