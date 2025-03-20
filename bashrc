@@ -92,15 +92,15 @@ alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 
 # UTK aliases
-alias hydra="ssh wbuziak@hydra0.eecs.utk.edu"
-alias acf="ssh wbuziak@acf-login.acf.tennessee.edu"
-alias isaac="ssh wbuziak@login.isaac.utk.edu"
-alias cluster="ssh wbuziak@neuro-firewall.eecs.utk.edu"
+# alias hydra="ssh wbuziak@hydra0.eecs.utk.edu"
+# alias acf="ssh wbuziak@acf-login.acf.tennessee.edu"
+# alias isaac="ssh wbuziak@login.isaac.utk.edu"
+# alias cluster="ssh wbuziak@neuro-firewall.eecs.utk.edu"
 
 # Laptop aliases
 
 # Colorado School of Mines
-alias milk='ssh wbuziak@138.67.20.8'
+alias milk='ssh wbuziak@10.167.179.42'
 alias serv1='ssh wbuziak@138.67.14.63'
 alias serv2='ssh wbuziak@138.67.20.62'
 alias serv3='ssh wbuziak@138.67.7.61'
