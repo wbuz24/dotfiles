@@ -9,6 +9,7 @@
 
 _set_liveuser_PS1() {
 
+## This next line sets up command line username
 PS1='\[\e[38;5;160;3m\]\h\[\e[0m\]@\[\e[38;5;34m\]\W\[\e[0m\]: '
     if [ "$(whoami)" = "liveuser" ] ; then
         local iso_version="$(grep ^VERSION= /usr/lib/endeavouros-release 2>/dev/null | cut -d '=' -f 2)"
@@ -80,6 +81,7 @@ _open_files_for_editing() {
 # alias pacdiff=eos-pacdiff
 ################################################################################
 # System aliases
+
 alias vi=vim
 alias h="history -20"
 alias bat="bat -pp"
@@ -111,7 +113,6 @@ alias jump='ssh will_buziak@pvm-jumpbox.mines.edu'
 
 PATH=$PATH:/home/shartreuce/.cargo/bin
 
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 export NVM_DIR="$HOME/.nvm"
