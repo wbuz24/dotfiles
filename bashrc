@@ -104,9 +104,9 @@ alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles exce
 # Colorado School of Mines
 alias milk='ssh wbuziak@10.167.179.42'
 alias serv1='ssh wbuziak@iris-arm-server-1'
-alias serv2='ssh wbuziak@10.167.201.17'
-alias serv3='ssh wbuziak@10.167.201.16'
-alias serv4='ssh wbuziak@10.167.201.24'
+alias serv2='ssh wbuziak@iris-arm-server-2'
+alias serv3='ssh wbuziak@iris-arm-server-3'
+alias serv4='ssh wbuziak@iris-arm-server-4'
 alias jump='ssh will_buziak@pvm-jumpbox.mines.edu'
 
 # Add to path
